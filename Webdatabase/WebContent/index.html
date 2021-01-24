@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color:   #a07676;
+}
+ input[type=submit] {
+    background-color:lightblue;
+    border: none;
+    color: black;
+
+
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+  .bigbutton {
+      position: fixed;
+      left:47.1%;
+      border: 0;
+      line-height: 2.5;
+      padding: 0 20px;
+      font-size: 1rem;
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 1px 1px #000;
+      border-radius: 10px;
+      background-color: green;
+      background-image: linear-gradient(to top left,
+                                        rgba(0, 0, 0, .2),
+                                        rgba(0, 0, 0, .2) 30%,
+                                        rgba(0, 0, 0, 0));
+      box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                  inset -2px -2px 3px rgba(0, 0, 0, .6);
+  }
+
+  .bigbutton:hover {
+      background-color: rgba(255, 0, 0, 1);
+  }
+
+  .bigbutton:active {
+      box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                  inset 2px 2px 3px rgba(0, 0, 0, .6);
+  }
+
+  div.ex {
+      margin: 100px 150px 100px 80px;
+  }
+
+  div.transbox {
+      margin: 30px;
+      background-color: #ffffff;
+      border: 3px solid black;
+      opacity: 0.5;
+      filter: alpha(opacity=60);
+}
+  div.about {
+      position: fixed;
+      margin-top: 7.5%;
+      height: 130px;
+      padding:15px;
+      margin-left:30px;
+      margin-right: 30px;
+      background-color: #ffffff;
+      border: 3px solid black;
+      opacity: 0.61;
+      filter: alpha(opacity=60);
+}
+
+
+
+
+  select {
+       border-radius: 4px;
+       top:28%;
+       left: 43%;
+         position: fixed;
+        height: 5%;
+        width:200px;
+        color:black;
+        background-color:#d9dab0;
+}
+
+</style>
+</head>
+<body>
+ <div id="wrapper">
+		<div id="header">
+		<div class="transbox">
+<div align="Center"><h1>Welcome to Data Analysis</h1></div>
+</br>
+</div>
+</div>
+
+
+<div class="ex">
+<div id="content">
+<table border=1>
+<tr>
+<div align="center">
+<form action="#" method="POST">
+  <div class="col-sm-12">
+  <select class="form-control" name="issue" id="sel1" >
+   <option value"Avaliableproducr" selected>Avaliable Product</option>
+    <option value="Highbuzzproduct">High Buzz Product</option>
+    <option value="Normalproduct">Normal Product</option>
+    <option value="Ondemandproduct">On Demand Product</option>
+    <option value="Otherproduct">Other Product</option>
+  </select>
+</div></br>
+
+<input type="button" name="Submit" class="bigbutton" value="Submit" onClick="window.open(issue.value,'newtab')">
+ </tr>
+</table>
+</div>
+</div>
+</div>
+
+
+
+<div class="about">
+<h1 class="how" >About the project?</h1>
+
+<p>The poject is processing large unstructured retail web crawling dataset which is excel format using MapReduce. After
+   processing this data stored on HDFS in multiple file according to different condition for analysis using dashboard.
+   Using Hive component of hadoop it fire advanced query on this dataset and using Sqoop component of Hadoop it exports
+   this data into relational database to perform Prediction and Classification over the web crawling data. In this dashboard
+   you will see the list of various item classified into different categories based on the input.
+</p>
+
+</div>
+
+<div id="footer"></div>
+</div>
+
+</body>
+</html>
